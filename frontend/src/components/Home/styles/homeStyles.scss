@@ -1,0 +1,65 @@
+.hero-container {
+    position: absolute;
+    display: flex;
+    top: 55%;
+    left: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-tab {
+    position: relative;
+    text-align: center;
+    width: 225px;
+    margin: 5px;
+    background-color: black;
+}
+
+.tab-title {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 225px;
+    transition: 0.3s;
+    font-size: 28px;
+    opacity: 0;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant SC', serif;
+    background-color: black;
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+.otra {
+    width: 225px;
+    height: 100%;
+    transition: 0.3s;
+    &:hover {
+        opacity:0.2;
+        cursor: pointer;
+    }   
+}
+
+.title-logo {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    height: 50%;
+    width: 25%;
+    height: 200px;
+    transform: translate(-50%, -50%);
+}
+
+.localization {
+    font-family: 'Cormorant SC', serif;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 600;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
