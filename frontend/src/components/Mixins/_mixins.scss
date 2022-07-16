@@ -1,0 +1,6 @@
+@mixin positionDivAbsolute($top, $left, $negTop, $negLeft) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-$negTop, -$negLeft);
+}
