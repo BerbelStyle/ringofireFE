@@ -2,13 +2,14 @@
 
 import React from "react";
 import "./styles/homeStyles.css";
+import { Link } from "react-router-dom";
 
 const HomeTabs = () => {
   const tabs = [
-    { image: "images/gallery.jpg", title: "Gallery" },
-    { image: "images/johnny-cash.jpg", title: "About" },
-    { image: "images/leather-tools.jpg", title: "The Process" },
-    { image: "images/contact.jpg", title: "Contact" },
+    { image: "images/gallery.jpg", title: "gallery" },
+    { image: "images/johnny-cash.jpg", title: "about" },
+    { image: "images/leather-tools.jpg", title: "process" },
+    { image: "images/contact.jpg", title: "contact" },
   ];
 
   return (
@@ -18,7 +19,9 @@ const HomeTabs = () => {
           return (
             <div className="tab-card">
               <div className="tab-title">{tab.title}</div>
-              <img className="tab-image" src={tab.image} />
+              <Link to={"/" + tab.title}>
+                <img className="tab-image" src={tab.image} />
+              </Link>
             </div>
           );
         })}

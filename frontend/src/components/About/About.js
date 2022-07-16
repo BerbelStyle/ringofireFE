@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <div>
-        <p>Alcalá de Henares, Madrid</p>
+        <p>HOLAA</p>
       </div>
     </>
   );
