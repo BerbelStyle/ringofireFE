@@ -13,10 +13,18 @@
       justify-content: space-around;
   width: 100%;
   height: 300px;
+  background-color: white;
+  z-index: 1;
 }
 
 .header-container.with-links {
   height: 250px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-container {
+    width: 100%;
+  }
 }
 
 .header-logo {
@@ -44,6 +52,12 @@
       justify-content: space-around;
 }
 
+@media only screen and (max-width: 600px) {
+  .header-links-container {
+    width: 100%;
+  }
+}
+
 .header-link {
   color: black;
   font-size: 28px;
@@ -56,5 +70,11 @@
 
 .header-link.active {
   font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-link {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=headerStyles.css.map */

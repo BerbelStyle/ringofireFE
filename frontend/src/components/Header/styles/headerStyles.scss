@@ -11,6 +11,12 @@
     &.with-links {
         height: 250px;
     }
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+
+    }
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
 }
 
 .header-logo {
@@ -27,6 +33,9 @@
     align-items: center;
     width:  1135px;
     justify-content: space-around;
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+    }
 }
 .header-link {
     color: black;
@@ -38,4 +47,7 @@
     &.active {
         font-weight: 700;
       }
+      @media only screen and (max-width: 600px) {
+        font-size: 20px;
+    }
 }
