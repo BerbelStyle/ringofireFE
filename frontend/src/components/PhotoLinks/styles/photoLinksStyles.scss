@@ -1,34 +1,16 @@
 @import "../../Mixins/mixins";
 
-//Home
-.home-logo {
-    @include positionDivAbsolute(15%, 50%, 50%, 50%);
-    height: 150px;
-    border: 3px solid black;
-}
-
-.home-location {
-    @include positionDivAbsolute(90%, 50%, 50%, 50%);
-    display: flex;
-    background-color: white;
-    padding: 10px;
-
-    justify-content: center;
-    font-family: 'Cormorant SC', serif;
-    font-weight: 600;
-}
-
-//HomeTabs
 .tabs-container {
-    @include positionDivAbsolute(55%, 50%, 50%, 50%);
     display: flex;
-    height: 50%;
+    justify-content: center;
+    width: 100%;
+
 }
 
 .tab-card {
     position: relative;
     text-align: bottom;
-    width: 300px;
+    width: 280px;
     margin: 5px;
 }
 
@@ -62,10 +44,9 @@
 //Responsive
 @media only screen and (max-width: 1100px) {
     .tabs-container {
-   
         display: grid;
         grid-template-columns: 49% 49%;
-
+        margin-bottom: 1%;
         width: 100%;
         justify-content: space-around;
     }
@@ -80,16 +61,11 @@
     .tabs-container {
         display: grid;
         grid-template-columns: 95%;
-        @include positionDivAbsolute(45%, 50%, 50%, 50%);
         width: 100%;
         justify-content: center;
     }
     .tab-card {
         width: 100%;
         margin-bottom: 2%;
-    }
-    .home-logo {
-        @include positionDivAbsolute(10%, 50%, 50%, 50%);
-        height: 100px;
     }
 }

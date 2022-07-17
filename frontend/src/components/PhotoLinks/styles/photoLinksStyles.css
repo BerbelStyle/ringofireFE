@@ -1,47 +1,17 @@
-.home-logo {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height: 150px;
-  border: 3px solid black;
-}
-
-.home-location {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.tabs-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: white;
-  padding: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: 'Cormorant SC', serif;
-  font-weight: 600;
-}
-
-.tabs-container {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50%;
+  width: 100%;
 }
 
 .tab-card {
   position: relative;
   text-align: bottom;
-  width: 300px;
+  width: 280px;
   margin: 5px;
 }
 
@@ -85,6 +55,7 @@
     display: grid;
     -ms-grid-columns: 49% 49%;
         grid-template-columns: 49% 49%;
+    margin-bottom: 1%;
     width: 100%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -102,11 +73,6 @@
     display: grid;
     -ms-grid-columns: 95%;
         grid-template-columns: 95%;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -116,13 +82,5 @@
     width: 100%;
     margin-bottom: 2%;
   }
-  .home-logo {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    height: 100px;
-  }
 }
-/*# sourceMappingURL=homeStyles.css.map */
+/*# sourceMappingURL=photoLinksStyles.css.map */

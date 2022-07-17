@@ -1,0 +1,17 @@
+@import "../../Mixins/mixins";
+
+.footer-container {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    height: 110px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-location {
+    font-family: 'Cormorant SC', serif;
+    font-weight: 600;
+}
