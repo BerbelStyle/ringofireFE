@@ -2,15 +2,14 @@
 
 import React from "react";
 
-import PhotoLinks from "../components/PhotoLinks/PhotoLinks";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
 const Contact = () => {
   return (
     <>
-      <PhotoLinks />
-      <div className="home-location">
-        <p>Alcalá de Henares, Madrid</p>
-      </div>
+      <Header withLinks pageTitle={"contact"} />
+      <Footer />
     </>
   );
 };

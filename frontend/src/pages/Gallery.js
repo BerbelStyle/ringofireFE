@@ -2,12 +2,16 @@
 
 import React from "react";
 
-import PhotoLinks from "../components/PhotoLinks/PhotoLinks";
+import Header from "../components/Header/Header";
+import ImageGallery from "../components/ImageGallery/ImageGallery";
+import Footer from "../components/Footer/Footer";
 
 const Gallery = () => {
   return (
     <>
-      <PhotoLinks />
+      <Header withLinks pageTitle={"gallery"} />
+      <ImageGallery />
+      <Footer />
     </>
   );
 };

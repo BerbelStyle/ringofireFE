@@ -1,0 +1,29 @@
+.gallery-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 4px;
+}
+
+.gallery-row {
+    flex: 17%;
+    max-width: 18%;
+    padding: 0 4px;
+}
+
+.gallery-image {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    &:hover {
+        cursor: pointer;
+    }
+}
