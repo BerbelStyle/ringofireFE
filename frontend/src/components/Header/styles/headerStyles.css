@@ -18,13 +18,28 @@
 }
 
 .header-container.with-links {
-  height: 250px;
+  border-bottom: 2px solid #adadad;
 }
 
 @media only screen and (max-width: 600px) {
   .header-container {
-    width: 100%;
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    height: 150px;
   }
+}
+
+.header-login {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-family: 'Cormorant SC', serif;
+  font-weight: 600;
+}
+
+.header-login:hover {
+  cursor: pointer;
 }
 
 .header-logo {
@@ -34,9 +49,8 @@
 
 @media only screen and (max-width: 600px) {
   .header-logo {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
+    height: 80px;
+    border: 1px solid black;
   }
 }
 
@@ -47,12 +61,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1135px;
+  width: 60%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .header-links-container {
     width: 100%;
   }

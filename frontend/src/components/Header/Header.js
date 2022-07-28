@@ -10,6 +10,7 @@ const Header = (props) => {
     <div
       className={"header-container" + (props?.withLinks ? " with-links" : "")}
     >
+      <div className="header-login">Log in</div>
       <Link to={"/"}>
         <img
           src={"images/main_logo_black.png"}

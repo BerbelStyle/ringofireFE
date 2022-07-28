@@ -1,6 +1,3 @@
-
-@import "../../Mixins/mixins";
-
 .header-container {
     display: flex;
     flex-direction: column;
@@ -8,35 +5,48 @@
     justify-content: space-around;
     width: 100%;
     height: 300px;
-    &.with-links {
-        height: 250px;
-    }
-    @media only screen and (max-width: 600px) {
-        width: 100%;
-
-    }
     background-color: rgb(255, 255, 255);
     z-index: 1;
+    &.with-links {
+        border-bottom: 2px solid rgb(173, 173, 173);
+    }
+    @media only screen and (max-width: 600px) {
+        top: 0;
+        position: sticky;
+        height: 150px;
+    }
+}
+
+.header-login {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-family: 'Cormorant SC', serif;
+    font-weight: 600;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .header-logo {
     height: 120px;
     border: 3px solid black;
     @media only screen and (max-width: 600px) {
-        position: sticky;
-        top: 0px;
+        height: 80px;
+        border: 1px solid black;
     }
 }
 
 .header-links-container {
     display: flex;
     align-items: center;
-    width:  1135px;
+    width:  60%;
     justify-content: space-around;
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 900px) {
         width: 100%;
     }
 }
+
 .header-link {
     color: black;
     font-size: 28px;
