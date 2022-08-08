@@ -1,9 +1,23 @@
 /** @format */
 
 const express = require("express");
+const multer = require("multer");
+
 const app = express();
 const cors = require("cors");
 const pool = require("./db");
+const fs = require("fs");
+const path = require("path");
+const e = require("express");
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, "../frontend/public/images/products");
+  },
+  filename: (req, file, cb) => {
+    cb(null, Date.now() + "-" + path.extname(file.originalname));
+  },
+});
+const upload = multer({ storage: storage });
 
 //middleware
 app.use(cors());
@@ -12,17 +26,19 @@ app.use(express.json()); //req.body
 //ROUTES//
 
 //create product
-app.post("/products", async (req, res) => {
+app.post("/products", upload.single("productImage"), async (req, res) => {
+  const { image } = req.body;
+  console.log(req.body);
   try {
-    const { name, description, image } = req.body;
     const newProduct = await pool.query(
-      "INSERT INTO products (product_name, product_description, product_image) VALUES ($1, $2, $3) RETURNING *",
-      [name, description, image]
+      "INSERT INTO products (product_image) VALUES ($1) RETURNING *",
+      [image]
     );
     res.json(newProduct.rows[0]);
   } catch (err) {
     console.error(err.message);
   }
+  return false;
 });
 
 //get all products
@@ -65,13 +81,15 @@ app.put("/products/:id", async (req, res) => {
 });
 
 //delete a product
-app.delete("/products/:id", async (req, res) => {
+app.delete("/products/:id&:image", async (req, res) => {
   try {
-    const { id } = req.params;
+    const { id, image } = req.params;
     const deleteProduct = await pool.query(
       "DELETE FROM products WHERE product_id = $1",
       [id]
     );
+    console.log("../frontend/public/images/products/" + image);
+    fs.unlinkSync("../frontend/public/images/products/" + image);
     res.json("Product deleted");
   } catch (err) {
     console.error(err.message);
@@ -81,3 +99,5 @@ app.delete("/products/:id", async (req, res) => {
 app.listen(5000, () => {
   console.log("Server has started on port 5000");
 });
+
+app.get("/uploadImage");

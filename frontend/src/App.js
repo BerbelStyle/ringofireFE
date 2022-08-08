@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Process from "./pages/Process";
-import Contact from "./pages/Contact";
+import Order from "./pages/Order";
 import "./App.css";
 
 class App extends Component {
@@ -19,7 +19,7 @@ class App extends Component {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/about" element={<About />} />
             <Route path="/process" element={<Process />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/order" element={<Order />} />
           </Routes>
         </div>
       </Router>

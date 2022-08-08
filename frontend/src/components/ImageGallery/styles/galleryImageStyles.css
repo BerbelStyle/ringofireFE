@@ -6,7 +6,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 2%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .gallery {
@@ -18,15 +25,7 @@
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
-  padding: 0 4px;
-}
-
-.gallery-row {
-  -webkit-box-flex: 17%;
-      -ms-flex: 17%;
-          flex: 17%;
-  max-width: 18%;
+  width: 60%;
   padding: 0 4px;
 }
 
@@ -38,5 +37,68 @@
 
 .gallery-image:hover {
   cursor: pointer;
+}
+
+.btn-add {
+  margin: 0 0 20px 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  padding: 15px;
+  background-color: white;
+  border: 2px solid black;
+  font-family: 'Cormorant SC', serif;
+  font-weight: 600;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn-add:hover {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+}
+
+.product-card {
+  position: relative;
+  text-align: bottom;
+  margin: 5px;
+  width: 20%;
+  height: 25%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.product-image {
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .gallery {
+    width: 100%;
+  }
+  .product-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2%;
+  }
+  .product-card:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 /*# sourceMappingURL=galleryImageStyles.css.map */

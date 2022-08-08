@@ -1,0 +1,54 @@
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2%;
+}
+
+.form-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  border: 1px solid red;
+}
+
+.form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.form-input {
+  background-color: #ececec;
+  padding: 10px;
+  width: 100%;
+  margin: 10px;
+}
+
+.form-textarea {
+  background-color: #ececec;
+  padding: 10px;
+  width: 100%;
+  margin: 10px;
+  border: none;
+  resize: none;
+}
+/*# sourceMappingURL=orderFormStyles.css.map */

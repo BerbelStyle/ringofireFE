@@ -1,9 +1,8 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,iBAAiB,CAAC;EACd,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,GAAG;EACX,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,KAAK;EACvB,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,gBAAgB,CAAC;EACb,WAAW,EAAE,qBAAqB;EAClC,WAAW,EAAE,GAAG;CACnB",
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EAEd,MAAM,EAAE,GAAG;EACX,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,KAAK;EACvB,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,gBAAgB,CAAC;EACb,WAAW,EAAE,qBAAqB;EAClC,WAAW,EAAE,GAAG;CACnB",
     "sources": [
-        "footerStyles.scss",
-        "../../Mixins/_mixins.scss"
+        "footerStyles.scss"
     ],
     "names": [],
     "file": "footerStyles.css"
