@@ -39,7 +39,7 @@ const ImageGallery = (props) => {
   useEffect(() => {
     getProducts();
   }, []);
-  console.log(selectedProduct);
+
   return (
     <>
       <div className="gallery-container">

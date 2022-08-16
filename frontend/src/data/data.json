@@ -1,26 +1,22 @@
 {
     "links": [
         {
-        "title": "gallery",
-        "image": "images/gallery.jpg"
+            "title": "gallery",
+            "image": "images/gallery.jpg"
         },
         {
             "title": "about",
             "image": "images/johnny-cash.jpg"
         },
         {
-            "title": "process",
-            "image": "images/leather-tools.jpg"
-        },
-        {
-            "title": "order",
+            "title": "contact",
             "image": "images/contact.jpg"
         }
     ],
     "texts": {
         "introduction":
             {
-                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                "content": "Si tuviera que definir los productos que creo con una sola palabra, elegiría longevidad. En un mundo en el que el «fast fashion» está a la orden del día, en el que somos bombardeados constantemente con anuncios de nuevos productos que, generalmente, no sobrevivirán más allá de su fecha de garantía, conviene pararse a pensar por qué todavía podemos usar los maletines o las cartucheras de nuestros abuelos, mientras que nuestros padres ya han comprado y gastado decenas de carteras y cinturones. \nCuando fabrico un artículo, ya sea una billetera, una correa de reloj o un portafolios, ofrezco una garantía de por vida, ya que son productos por los que tus nietos se pelearán por heredar. Empleando técnicas tradicionales, cuyo uso ha sido probado por el paso del tiempo, materiales de primera calidad y una atención al detalle que no puede ser alcanzada en la producción en masa, la marroquinería artesanal es difícil de encontrar hoy en día, pero me enorgullezco de haber aprendido sus secretos y ofrecer artículos que no solo son de una calidad excepcional, sino que están fabricados completamente a mano y con el objetivo de durar años y años. \nEn la galería se encuentran fotografías de trabajos ya finalizados. Como se puede comprobar, la línea de artículos cubre tarjeteros, carteras, cinturones, maletines, fundas de gafas, correas de reloj…  Cada uno de estos productos lleva semanas de planificación y numerosas horas de trabajo empleadas en la fabricación de prototipos con el objetivo de crear artículos de la máxima calidad y durabilidad. Además, todos los modelos enseñados son completamente personalizables, pudiendo ser adaptados a las necesidades y gustos del cliente, ya sea estética o funcionalmente. \nTodas las pieles empleadas son de la máxima calidad y son cuidadosamente seleccionadas para lograr productos que no solo sean bonitos, sino que estén acabados apuntando al máximo estándar posible. Dependiendo del artículo, el cuero es importado de Italia, Inglaterra o Francia, siempre de curtidurías con una larga trayectoria artesanal y cuyo trabajo roza la perfección, alcanzando una calidad respetada por las mejores casas de moda, como pueden ser Hermès, Louis Vuitton o Fendi."
             }
     }
 }

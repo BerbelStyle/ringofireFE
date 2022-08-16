@@ -4,16 +4,16 @@ import React from "react";
 
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import OrderForm from "../components/OrderForm/OrderForm";
+import ContactForm from "../components/ContactForm/ContactForm";
 
-const Order = () => {
+const Contact = () => {
   return (
     <>
-      <Header withLinks pageTitle={"order"} />
-      <OrderForm />
+      <Header withLinks pageTitle={"contact"} />
+      <ContactForm />
       <Footer />
     </>
   );
 };
 
-export default Order;
+export default Contact;

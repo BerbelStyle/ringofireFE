@@ -5,18 +5,16 @@ import "./styles/modalStyles.css";
 
 const AddProductModal = (props) => {
   const { onClose } = props;
-  const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [imagePath, setImagePath] = useState("");
 
   const addProduct = async (e) => {
     e.preventDefault();
     try {
-      const body = { image: imagePath };
       const response = await fetch("http://localhost:5000/products", {
         method: "POST",
-        mode: "no-cors",
-        body: JSON.stringify(body),
+        headers: { "Content-Type": "application/json" },
+        body: imagePath,
       });
       window.location = "/gallery";
     } catch (err) {
@@ -29,19 +27,21 @@ const AddProductModal = (props) => {
     reader.onload = () => {
       if (reader.readyState === 2) {
         setImage(reader.result);
+        setImagePath(e.target.files[0].name);
+        console.log("OJO", imagePath);
       }
     };
-    setImagePath(e.target.files[0].name);
     reader.readAsDataURL(e.target.files[0]);
   };
 
+  console.log(imagePath);
   return (
     <>
       <form
         className="modal-container"
-        //action="http://localhost:5000/products"
+        action="http://localhost:5000/products"
         method="post"
-        onSubmit={(e) => addProduct(e)}
+        //onSubmit={(e) => addProduct(e)}
       >
         <div className="modal-box">
           {/*}

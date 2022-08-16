@@ -5,8 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
 import About from "./pages/About";
-import Process from "./pages/Process";
-import Order from "./pages/Order";
+import Contact from "./pages/Contact";
 import "./App.css";
 
 class App extends Component {
@@ -18,8 +17,7 @@ class App extends Component {
             <Route path="/" element={<Home />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/about" element={<About />} />
-            <Route path="/process" element={<Process />} />
-            <Route path="/order" element={<Order />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </Router>

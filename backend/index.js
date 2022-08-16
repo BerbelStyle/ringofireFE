@@ -26,9 +26,9 @@ app.use(express.json()); //req.body
 //ROUTES//
 
 //create product
-app.post("/products", upload.single("productImage"), async (req, res) => {
+app.post("/products", async (req, res) => {
   const { image } = req.body;
-  console.log(req.body);
+  console.log(image);
   try {
     const newProduct = await pool.query(
       "INSERT INTO products (product_image) VALUES ($1) RETURNING *",
