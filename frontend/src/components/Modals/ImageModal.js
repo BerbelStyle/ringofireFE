@@ -5,8 +5,6 @@ import "./styles/modalStyles.css";
 
 const ImageModal = (props) => {
   const { onClose } = props;
-  const [name, setName] = useState("");
-  const [image, setImage] = useState("");
 
   return (
     <>

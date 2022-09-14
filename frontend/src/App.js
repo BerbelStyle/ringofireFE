@@ -6,23 +6,24 @@ import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import MyProvider from "./application/Provider";
 import "./App.css";
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <div className="app">
+const App = () => {
+  return (
+    <Router>
+      <div className="app">
+        <MyProvider>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-        </div>
-      </Router>
-    );
-  }
-}
+        </MyProvider>
+      </div>
+    </Router>
+  );
+};
 
 export default App;

@@ -1,13 +1,12 @@
 .footer-container {
-  bottom: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 110px;
+  height: 70px;
   background-color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

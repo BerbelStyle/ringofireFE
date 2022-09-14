@@ -1,18 +1,20 @@
 /** @format */
 
-import React from "react";
+import React, { useContext } from "react";
 import Header from "../components/Header/Header";
 import TextBox from "../components/TextBox/TextBox";
 import Footer from "../components/Footer/Footer";
+import { LanguageContext } from "../application/Provider";
 
-const About = () => {
-  const introductionText =
-    require("../data/data.json")?.texts?.introduction?.content;
+const About = (props) => {
+  const [language, setLanguage] = useContext(LanguageContext);
+  const introductionText = require(`../data/ringoffire-${language}.json`)?.texts
+    ?.about?.content;
   return (
     <>
       <div>
         <Header withLinks pageTitle={"about"} />
-        <TextBox>{introductionText}</TextBox>
+        <TextBox>{introductionText.replace(/\\n/g, "x")}</TextBox>
         <Footer />
       </div>
     </>

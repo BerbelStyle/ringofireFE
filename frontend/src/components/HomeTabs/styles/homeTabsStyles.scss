@@ -66,4 +66,9 @@
         width: 100%;
         margin-bottom: 2%;
     }
+    .tab-image {
+        opacity:0.3;
+        cursor: pointer;
+        filter: grayscale(100%);
+    }
 }

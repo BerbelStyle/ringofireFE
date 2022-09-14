@@ -1,11 +1,12 @@
 /** @format */
 
-import React from "react";
+import React, { useContext } from "react";
 import "./styles/homeTabsStyles.css";
 import { Link } from "react-router-dom";
-
+import { LanguageContext } from "../../application/Provider";
 const HomeTabs = (props) => {
-  const homeLinks = require("../../data/data.json")?.links;
+  const [language, setLanguage] = useContext(LanguageContext);
+  const homeLinks = require(`../../data//ringoffire-${language}.json`)?.links;
 
   return (
     <>
@@ -14,7 +15,7 @@ const HomeTabs = (props) => {
           return (
             <div className="tab-card">
               <div className="tab-title">{link.title}</div>
-              <Link to={"/" + link.title}>
+              <Link to={"/" + link.value}>
                 <img className="tab-image" src={link.image} alt={link.title} />
               </Link>
             </div>

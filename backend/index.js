@@ -26,13 +26,12 @@ app.use(express.json()); //req.body
 //ROUTES//
 
 //create product
-app.post("/products", async (req, res) => {
-  const { image } = req.body;
-  console.log(image);
+app.post("/products", upload.single("productImage"), async (req, res) => {
+  console.log(req.file);
   try {
     const newProduct = await pool.query(
       "INSERT INTO products (product_image) VALUES ($1) RETURNING *",
-      [image]
+      [req.file.filename]
     );
     res.json(newProduct.rows[0]);
   } catch (err) {

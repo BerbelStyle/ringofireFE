@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import AddProductModal from "../Modals/AddProductModal";
-import { Link } from "react-router-dom";
 import "./styles/galleryImageStyles.css";
 import ImageModal from "../Modals/ImageModal";
 
@@ -43,30 +42,36 @@ const ImageGallery = (props) => {
   return (
     <>
       <div className="gallery-container">
-        <div
-          type="button"
-          className="btn-add"
-          onClick={() => setShowModal(true)}
-        >
-          Add Product
-        </div>
-        <div
-          type="button"
-          className="btn-add"
-          onClick={() =>
-            deleteProduct(selectedProduct.product_id, selectedProduct)
-          }
-        >
-          Delete Product
+        <div className="buttons-container">
+          <div
+            type="button"
+            className="btn-add"
+            onClick={() => setShowModal(true)}
+          >
+            <img className="icon" src="images/add-svgrepo-com.svg" />
+          </div>
+          {selectedProduct && (
+            <div
+              type="button"
+              className="btn-delete"
+              onClick={() =>
+                deleteProduct(selectedProduct.product_id, selectedProduct)
+              }
+            >
+              <img className="icon" src="images/delete-svgrepo-com.svg" />
+            </div>
+          )}
         </div>
         <div className="gallery">
           {products?.map((product) => {
-            console.log(
-              "../../" + product.product_image.replace("../frontend/", "")
-            );
             return (
               <div
-                className="product-card"
+                className={
+                  "product-card" +
+                  (selectedProduct.product_id === product.product_id
+                    ? "-selected"
+                    : "")
+                }
                 onClick={() => setSelectedProduct(product)}
               >
                 <img
