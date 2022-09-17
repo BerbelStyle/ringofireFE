@@ -87,9 +87,39 @@ app.delete("/products/:id&:image", async (req, res) => {
       "DELETE FROM products WHERE product_id = $1",
       [id]
     );
-    console.log("../frontend/public/images/products/" + image);
     fs.unlinkSync("../frontend/public/images/products/" + image);
     res.json("Product deleted");
+  } catch (err) {
+    console.error(err.message);
+  }
+});
+
+//create a userSELECT * FROM users WHERE username = $1
+app.post("/register", async (req, res) => {
+  try {
+    const { username, password, userrole } = req.body;
+    const newUser = await pool.query(
+      "INSERT INTO users (username, userpassword, userrole) VALUES($1, $2, $3) RETURNING *",
+      [username, password, userrole]
+    );
+    res.json(newUser.rows[0]);
+  } catch (err) {
+    console.error(err.message);
+  }
+});
+
+app.post("/login", async (req, res) => {
+  try {
+    const { username, password } = req.body;
+    const newUser = await pool.query(
+      "SELECT * FROM users WHERE username = $1 AND userpassword = $2",
+      [username, password]
+    );
+    console.log(
+      res.json({
+        username: res.username,
+      })
+    );
   } catch (err) {
     console.error(err.message);
   }

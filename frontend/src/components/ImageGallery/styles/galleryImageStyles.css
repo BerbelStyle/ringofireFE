@@ -103,18 +103,20 @@
 }
 
 .product-card {
+  z-index: 1;
   margin: 0 0 10px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .product-card:hover {
+  z-index: 1;
   cursor: pointer;
-  background-color: #3c98ba;
-  border: 3px solid #3c98ba;
 }
 
 .product-card-selected {
-  border: 3px solid #3c98ba;
-  background-color: #3c98ba;
+  border: 3px solid #44d3de;
+  background-color: #44d3de;
   margin: 0 0 10px 0;
 }
 

@@ -38,23 +38,6 @@
     }   
 }
 
-
-//Responsive
-@media only screen and (max-width: 1100px) {
-    .tabs-container {
-        display: grid;
-        grid-template-columns: 49% 49%;
-        margin-bottom: 1%;
-        width: 100%;
-        justify-content: space-around;
-    }
-    .tab-card {
-        width: 100%;
-        margin: 0;
-        margin-top: 5px;
-    }
-}
-
 @media only screen and (max-width: 600px) {
     .tabs-container {
         display: grid;

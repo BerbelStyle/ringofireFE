@@ -4,8 +4,10 @@ import React, { useContext, useState, useEffect } from "react";
 import "./styles/headerStyles.css";
 import { Link } from "react-router-dom";
 import { LanguageContext } from "../../application/Provider";
+import { UserContext } from "../../application/UserContext";
 
 const Header = (props) => {
+  const { user, setUser } = useContext(UserContext);
   const [language, setLanguage] = useContext(LanguageContext);
   const [toggle, setToggle] = useState(false);
   let headerLinks = require(`../../data/ringoffire-${language}.json`)?.links;
@@ -23,15 +25,34 @@ const Header = (props) => {
     <div
       className={"header-container" + (props?.withLinks ? " with-links" : "")}
     >
-      <select name="select" onChange={(e) => changeLanguage(e)}>
-        <option value="EN" selected={language === "EN" ? true : false}>
+      <select
+        name="select"
+        className="lang-select"
+        onChange={(e) => changeLanguage(e)}
+      >
+        <option
+          className="lang-option"
+          value="EN"
+          selected={language === "EN" ? true : false}
+        >
           EN
         </option>
-        <option value="ES" selected={language === "ES" ? true : false}>
+        <option
+          className="lang-option"
+          value="ES"
+          selected={language === "ES" ? true : false}
+        >
           ES
         </option>
       </select>
-      <div className="header-login">Log in</div>
+      {user ? (
+        <button onClick={() => setUser(null)}>Logout</button>
+      ) : (
+        <Link to={"/login"}>
+          <div className="header-login">Log in</div>
+        </Link>
+      )}
+
       <Link to={"/"}>
         <img
           src={"images/main_logo_black.png"}
@@ -47,7 +68,7 @@ const Header = (props) => {
                 <div
                   className={
                     "header-link" +
-                    (props.pageTitle === link.title ? " active" : "")
+                    (props.pageTitle === link.value ? " active" : "")
                   }
                 >
                   {link.title}

@@ -1,11 +1,12 @@
 /** @format */
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import AddProductModal from "../Modals/AddProductModal";
 import "./styles/galleryImageStyles.css";
 import ImageModal from "../Modals/ImageModal";
 
 const ImageGallery = (props) => {
+  const ref = useRef();
   const [products, setProducts] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [showImageModal, setShowImageModal] = useState(false);
@@ -36,6 +37,18 @@ const ImageGallery = (props) => {
   };
 
   useEffect(() => {
+    const checkIfClickedOutside = (e) => {
+      if (selectedProduct && ref.current && !ref.current.contains(e.target)) {
+        setSelectedProduct("");
+      }
+    };
+    document.addEventListener("mousedown", checkIfClickedOutside);
+    return () => {
+      document.removeEventListener("mousedown", checkIfClickedOutside);
+    };
+  }, [selectedProduct]);
+
+  useEffect(() => {
     getProducts();
   }, []);
 
@@ -53,6 +66,7 @@ const ImageGallery = (props) => {
           {selectedProduct && (
             <div
               type="button"
+              disabled={!selectedProduct}
               className="btn-delete"
               onClick={() =>
                 deleteProduct(selectedProduct.product_id, selectedProduct)
@@ -66,6 +80,7 @@ const ImageGallery = (props) => {
           {products?.map((product) => {
             return (
               <div
+                ref={ref}
                 className={
                   "product-card" +
                   (selectedProduct.product_id === product.product_id

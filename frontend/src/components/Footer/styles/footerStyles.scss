@@ -1,16 +1,14 @@
 .footer-container {
-
-
     display: flex;
     height: 70px;
     background-color: white;
     align-items: flex-end;
     justify-content: center;
     width: 100%;
-
 }
 
 .footer-location {
     font-family: 'Cormorant SC', serif;
     font-weight: 600;
+    margin: 10px;
 }
