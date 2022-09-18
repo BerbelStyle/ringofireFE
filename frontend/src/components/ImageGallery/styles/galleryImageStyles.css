@@ -69,12 +69,14 @@
 }
 
 .btn-send:disabled {
-  border: 2px solid lightgray;
+  border: none;
+  background-color: #7d7d7d;
+  color: darkgray;
 }
 
 .btn-send:disabled:hover {
-  background-color: white;
-  color: lightgray;
+  background-color: #515151;
+  color: darkgray;
 }
 
 .btn-send:hover {

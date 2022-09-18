@@ -109,20 +109,21 @@ app.post("/register", async (req, res) => {
 });
 
 app.post("/login", async (req, res) => {
-  try {
-    const { username, password } = req.body;
-    const newUser = await pool.query(
-      "SELECT * FROM users WHERE username = $1 AND userpassword = $2",
-      [username, password]
-    );
-    console.log(
-      res.json({
-        username: res.username,
-      })
-    );
-  } catch (err) {
-    console.error(err.message);
-  }
+  const { username, password } = req.body;
+  await pool.query(
+    "SELECT * FROM users WHERE username = $1 AND userpassword = $2",
+    [username, password],
+    (err, result) => {
+      if (err) {
+        console.log(err);
+      }
+      if (result) {
+        res.json(result);
+      } else {
+        res.send({ message: "Wrong username/password combination" });
+      }
+    }
+  );
 });
 
 app.listen(5000, () => {

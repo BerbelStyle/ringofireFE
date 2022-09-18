@@ -10,15 +10,22 @@ const Header = (props) => {
   const { user, setUser } = useContext(UserContext);
   const [language, setLanguage] = useContext(LanguageContext);
   const [toggle, setToggle] = useState(false);
-  let headerLinks = require(`../../data/ringoffire-${language}.json`)?.links;
+
+  let literals = require(`../../data/ringoffire-${language}.json`);
 
   useEffect(() => {
-    headerLinks = require(`../../data/ringoffire-${language}.json`)?.links;
+    literals = require(`../../data/ringoffire-${language}.json`);
+    setUser(JSON.parse(localStorage.getItem("user")));
   }, [toggle]);
 
   const changeLanguage = (e) => {
     setLanguage(e.target.value);
     setToggle((prevState) => !prevState);
+  };
+
+  const eraseUser = () => {
+    setUser(null);
+    localStorage.removeItem("user");
   };
 
   return (
@@ -46,10 +53,22 @@ const Header = (props) => {
         </option>
       </select>
       {user ? (
-        <button onClick={() => setUser(null)}>Logout</button>
+        <>
+          <Link to={"/login"}>
+            <div onClick={eraseUser} className="header-logout">
+              {literals.literals.logout}
+            </div>
+          </Link>
+
+          <div className="header-login" style={{ color: "black" }}>
+            {user.username}
+          </div>
+        </>
       ) : (
         <Link to={"/login"}>
-          <div className="header-login">Log in</div>
+          <div className="header-login" style={{ color: "black" }}>
+            {literals.literals.login}
+          </div>
         </Link>
       )}
 
@@ -62,7 +81,7 @@ const Header = (props) => {
       </Link>
       {props?.withLinks && (
         <div class="header-links-container">
-          {headerLinks?.map((link) => {
+          {literals?.links.map((link) => {
             return (
               <Link to={"/" + link.value} style={{ textDecoration: "none" }}>
                 <div

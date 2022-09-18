@@ -16,14 +16,19 @@
             "image": "images/contact.jpg"
         }
     ],
-    "texts": {
-        "about":
-            {
-                "content": "Si tuviera que definir los productos que creo con una sola palabra, elegiría longevidad. En un mundo en el que el «fast fashion» está a la orden del día, en el que somos bombardeados constantemente con anuncios de nuevos productos que, generalmente, no sobrevivirán más allá de su fecha de garantía, conviene pararse a pensar por qué todavía podemos usar los maletines o las cartucheras de nuestros abuelos, mientras que nuestros padres ya han comprado y gastado decenas de carteras y cinturones.\nCuando fabrico un artículo, ya sea una billetera, una correa de reloj o un portafolios, ofrezco una garantía de por vida, ya que son productos por los que tus nietos se pelearán por heredar. Empleando técnicas tradicionales, cuyo uso ha sido probado por el paso del tiempo, materiales de primera calidad y una atención al detalle que no puede ser alcanzada en la producción en masa, la marroquinería artesanal es difícil de encontrar hoy en día, pero me enorgullezco de haber aprendido sus secretos y ofrecer artículos que no solo son de una calidad excepcional, sino que están fabricados completamente a mano y con el objetivo de durar años y años.\nEn la galería se encuentran fotografías de trabajos ya finalizados. Como se puede comprobar, la línea de artículos cubre tarjeteros, carteras, cinturones, maletines, fundas de gafas, correas de reloj…  Cada uno de estos productos lleva semanas de planificación y numerosas horas de trabajo empleadas en la fabricación de prototipos con el objetivo de crear artículos de la máxima calidad y durabilidad. Además, todos los modelos enseñados son completamente personalizables, pudiendo ser adaptados a las necesidades y gustos del cliente, ya sea estética o funcionalmente.\nTodas las pieles empleadas son de la máxima calidad y son cuidadosamente seleccionadas para lograr productos que no solo sean bonitos, sino que estén acabados apuntando al máximo estándar posible. Dependiendo del artículo, el cuero es importado de Italia, Inglaterra o Francia, siempre de curtidurías con una larga trayectoria artesanal y cuyo trabajo roza la perfección, alcanzando una calidad respetada por las mejores casas de moda, como pueden ser Hermès, Louis Vuitton o Fendi."
-            },
-        "contact":
-            {
-                "content": "Si desea información acerca de alguno de los artículos de la Galería o tiene en mente un proyecto personalizado, por favor, rellene el formulario siguiente y me pondré en contacto con usted."
-            }
-        }
+    "literals": {
+        "about": "Si tuviera que definir los productos que creo con una sola palabra, elegiría longevidad. En un mundo en el que el «fast fashion» está a la orden del día, en el que somos bombardeados constantemente con anuncios de nuevos productos que, generalmente, no sobrevivirán más allá de su fecha de garantía, conviene pararse a pensar por qué todavía podemos usar los maletines o las cartucheras de nuestros abuelos, mientras que nuestros padres ya han comprado y gastado decenas de carteras y cinturones.\nCuando fabrico un artículo, ya sea una billetera, una correa de reloj o un portafolios, ofrezco una garantía de por vida, ya que son productos por los que tus nietos se pelearán por heredar. Empleando técnicas tradicionales, cuyo uso ha sido probado por el paso del tiempo, materiales de primera calidad y una atención al detalle que no puede ser alcanzada en la producción en masa, la marroquinería artesanal es difícil de encontrar hoy en día, pero me enorgullezco de haber aprendido sus secretos y ofrecer artículos que no solo son de una calidad excepcional, sino que están fabricados completamente a mano y con el objetivo de durar años y años.\nEn la galería se encuentran fotografías de trabajos ya finalizados. Como se puede comprobar, la línea de artículos cubre tarjeteros, carteras, cinturones, maletines, fundas de gafas, correas de reloj…  Cada uno de estos productos lleva semanas de planificación y numerosas horas de trabajo empleadas en la fabricación de prototipos con el objetivo de crear artículos de la máxima calidad y durabilidad. Además, todos los modelos enseñados son completamente personalizables, pudiendo ser adaptados a las necesidades y gustos del cliente, ya sea estética o funcionalmente.\nTodas las pieles empleadas son de la máxima calidad y son cuidadosamente seleccionadas para lograr productos que no solo sean bonitos, sino que estén acabados apuntando al máximo estándar posible. Dependiendo del artículo, el cuero es importado de Italia, Inglaterra o Francia, siempre de curtidurías con una larga trayectoria artesanal y cuyo trabajo roza la perfección, alcanzando una calidad respetada por las mejores casas de moda, como pueden ser Hermès, Louis Vuitton o Fendi.",
+        "contact": "Si desea información acerca de alguno de los artículos de la Galería o tiene en mente un proyecto personalizado, por favor, rellene el formulario siguiente y me pondré en contacto con usted.",
+        "name": "nombre",
+        "email":"correo electrónico",
+        "writeMessage": "escribe aquí tu mensaje",
+        "registration": "Registro",
+        "login": "Iniciar Sesión",
+        "logout": "Cerrar Sesión",
+        "username": "Usuario",
+        "password": "Contraseña",
+        "send": "Enviar",
+        "register": "Registrarse",
+        "add": "Añadir"
+    }
 }

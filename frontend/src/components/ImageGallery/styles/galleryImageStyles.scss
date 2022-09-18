@@ -48,10 +48,12 @@
         font-weight: 600;
         width: 200px;
         &:disabled {
-            border: 2px solid lightgray;
+            border: none;
+            background-color: rgb(125, 125, 125);
+            color: darkgray;
             &:hover {
-                background-color: white;
-                color: lightgray;
+                background-color: rgb(81, 81, 81);
+                color: darkgray;
             }
         }
         &:hover {

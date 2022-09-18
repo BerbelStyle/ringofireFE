@@ -31,6 +31,20 @@
 
 }
 
+.header-logout {
+    @extend .header-login;
+    opacity: 0;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin: -5px -15px 0 0;
+    z-index: 100;
+    transition: 0.3s;
+    &:hover {
+        opacity: 1
+    }
+}
+
 .header-logo {
     height: 120px;
     border: 3px solid black;

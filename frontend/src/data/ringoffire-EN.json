@@ -16,14 +16,19 @@
             "image": "images/contact.jpg"
         }
     ],
-    "texts": {
-        "about":
-            {
-                "content": "If I had to define the leather goods I make with one word, I’d choose longevity. In a world largely defined by fast fashion, in which we are constantly exposed to advertising encouraging us to purchase new things that won’t likely survive long, it would be wise to stop and think why the briefcases and cartridge pouches of our grandfathers can still be used today but our fathers have already worn-down dozens of wallets and belts. When I make a product, may it be a wallet, a watchstrap or a portfolio, I offer a lifetime warranty because these are goods that your grandchildren will fight over.\nUsing only traditional techniques, which have been time-tested for over a hundred years, top tier leathers and materials and an attention to detail that simply cannot be achieved in mass production articles, traditional handcrafted leather goods are hard to come by nowadays. Nonetheless, I pride myself in having studied the craft secrets and being able to offer products made entirely by hand and with the goal of lasting many years.\nIn the Gallery, you can find pictures of finished leather goods. As you can see, I cover a wide selection of products, including cardholders, wallets, belts, briefcases, watchstraps… Each one of these require weeks of planning and many hours of prototyping because the goal is that of making articles of the greatest beauty and durability. Moreover, everything you see can be modified to meet your preferences, may those be aesthetic or functional.\nAll the leathers I use meet the highest standard of quality and are carefully selected to match the purpose of each product. Depending on the article, these leathers are imported from Italy, England or France, but always from tanneries with a long and rich trajectory that can achieve a quality appreciated even by the greatest houses of fashion, like Hermès or Louis Vuitton."
-            },
-        "contact":
-            {
-                "content": "For more information regarding any of the leather goods from the Gallery or to discuss a personalized project, please fill the form below and I’ll get in touch."
-            }
-        }
+    "literals": {
+        "about": "If I had to define the leather goods I make with one word, I’d choose longevity. In a world largely defined by fast fashion, in which we are constantly exposed to advertising encouraging us to purchase new things that won’t likely survive long, it would be wise to stop and think why the briefcases and cartridge pouches of our grandfathers can still be used today but our fathers have already worn-down dozens of wallets and belts. When I make a product, may it be a wallet, a watchstrap or a portfolio, I offer a lifetime warranty because these are goods that your grandchildren will fight over.\nUsing only traditional techniques, which have been time-tested for over a hundred years, top tier leathers and materials and an attention to detail that simply cannot be achieved in mass production articles, traditional handcrafted leather goods are hard to come by nowadays. Nonetheless, I pride myself in having studied the craft secrets and being able to offer products made entirely by hand and with the goal of lasting many years.\nIn the Gallery, you can find pictures of finished leather goods. As you can see, I cover a wide selection of products, including cardholders, wallets, belts, briefcases, watchstraps… Each one of these require weeks of planning and many hours of prototyping because the goal is that of making articles of the greatest beauty and durability. Moreover, everything you see can be modified to meet your preferences, may those be aesthetic or functional.\nAll the leathers I use meet the highest standard of quality and are carefully selected to match the purpose of each product. Depending on the article, these leathers are imported from Italy, England or France, but always from tanneries with a long and rich trajectory that can achieve a quality appreciated even by the greatest houses of fashion, like Hermès or Louis Vuitton.",
+        "contact": "For more information regarding any of the leather goods from the Gallery or to discuss a personalized project, please fill the form below and I’ll get in touch.",
+        "name": "name",
+        "email":"e-mail",
+        "writeMessage": "write your message here",
+        "registration": "Registration",
+        "login": "Log In",
+        "logout": "Log out",
+        "username": "username",
+        "password": "password",
+        "send": "send",
+        "register": "register",
+        "add": "Add"
+    }
 }

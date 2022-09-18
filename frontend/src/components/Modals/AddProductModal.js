@@ -1,12 +1,14 @@
 /** @format */
 
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { LanguageContext } from "../../application/Provider";
 import "./styles/modalStyles.css";
 
 const AddProductModal = (props) => {
+  const [language, setLanguage] = useContext(LanguageContext);
   const { onClose } = props;
   const [image, setImage] = useState("");
-
+  let literals = require(`../../data/ringoffire-${language}.json`).literals;
   let imageHandler = (e) => {
     const reader = new FileReader();
     reader.onload = () => {
@@ -36,7 +38,7 @@ const AddProductModal = (props) => {
             name="productImage"
             onChange={(e) => imageHandler(e)}
           ></input>
-          <input type="submit" value="Add" className="btn-add-save" />
+          <input type="submit" value={literals.add} className="btn-add-save" />
           <span className="btn-close" onClick={onClose}></span>
         </div>
       </form>

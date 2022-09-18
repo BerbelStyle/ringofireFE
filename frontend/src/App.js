@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useState, Component } from "react";
+import React, { useState, useMemo } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
@@ -10,14 +10,16 @@ import Login from "./pages/Login";
 import MyProvider from "./application/Provider";
 
 import "./App.css";
-import UserProvider from "./application/UserContext";
+import { UserContext } from "./application/UserContext";
 
 const App = () => {
+  const [user, setUser] = useState({});
+  const providerValue = useMemo(() => ({ user, setUser }), [user, setUser]);
   return (
     <Router>
       <div className="app">
         <MyProvider>
-          <UserProvider>
+          <UserContext.Provider value={providerValue}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/gallery" element={<Gallery />} />
@@ -25,7 +27,7 @@ const App = () => {
               <Route path="/contact" element={<Contact />} />
               <Route path="/login" element={<Login />} />
             </Routes>
-          </UserProvider>
+          </UserContext.Provider>
         </MyProvider>
       </div>
     </Router>
