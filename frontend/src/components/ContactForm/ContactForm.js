@@ -1,6 +1,7 @@
 /** @format */
 
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
+
 import { LanguageContext } from "../../application/Provider";
 import "./styles/contactFormStyles.css";
 
@@ -19,7 +20,7 @@ const ContactForm = (props) => {
           <input
             type="hidden"
             name="_next"
-            value={`${window.location.origin}/thankyou`}
+            value={`http://ringoffireleather.netlify.app/thankyou?&lang=${language}`}
           />
           <input type="hidden" name="_captcha" value="false" />
           <input
