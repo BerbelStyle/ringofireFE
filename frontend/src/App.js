@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useState, useMemo } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
@@ -12,8 +12,6 @@ import "./App.css";
 import Thanks from "./pages/Thanks";
 
 const App = () => {
-  const [user, setUser] = useState({});
-  const providerValue = useMemo(() => ({ user, setUser }), [user, setUser]);
   return (
     <Router>
       <div className="app">

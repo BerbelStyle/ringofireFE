@@ -19,7 +19,7 @@ const ContactForm = (props) => {
           <input
             type="hidden"
             name="_next"
-            value={`http://ringoffireleather.netlify.app/thankyou?&lang=${language}`}
+            value={`https://ringoffireleather.netlify.app/thankyou?&lang=${language}`}
           />
           <input type="hidden" name="_captcha" value="false" />
           <input
