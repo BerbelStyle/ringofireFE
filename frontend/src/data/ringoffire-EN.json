@@ -31,6 +31,7 @@
         "register": "register",
         "add": "Add",
         "thanks": "Thank you",
-        "emailSentMessage": "Your e-mail was sent succesfully"
+        "emailSentMessage": "Your e-mail was sent succesfully",
+        "back": "Back"
     }
 }

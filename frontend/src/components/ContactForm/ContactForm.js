@@ -19,7 +19,7 @@ const ContactForm = (props) => {
           <input
             type="hidden"
             name="_next"
-            value={`${window.location.origin}/thankyou?&lang=${language}`}
+            value={`${window.location.origin}/thankyou`}
           />
           <input type="hidden" name="_captcha" value="false" />
           <input

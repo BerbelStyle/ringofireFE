@@ -21,7 +21,7 @@ const ImageModal = (props) => {
           </p>
           <p className="confirmation">{literals.emailSentMessage + "."}</p>
           <Link to="/" className="btn-back" style={{ textDecoration: "none" }}>
-            Go back
+            {literals.back}
           </Link>
         </div>
       </div>
