@@ -53,19 +53,20 @@
 
 @media only screen and (max-width: 600px) {
   .tabs-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 95%;
-        grid-template-columns: 95%;
+    display: block;
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+  .no-scroll {
+    height: 600px;
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    overflow: hidden;
   }
   .tab-card {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 3%;
+    width: 85%;
+    height: 600px;
+    margin: 0 30px 30px 39px;
+    display: inline-block;
   }
   .tab-image {
     opacity: 0.3;

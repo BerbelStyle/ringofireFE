@@ -9,7 +9,7 @@ const HomeTabs = (props) => {
   const homeLinks = require(`../../data//ringoffire-${language}.json`)?.links;
 
   return (
-    <>
+    <div className="no-scroll">
       <div className="tabs-container">
         {homeLinks?.map((link) => {
           return (
@@ -22,7 +22,7 @@ const HomeTabs = (props) => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 
