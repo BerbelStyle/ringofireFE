@@ -17,11 +17,13 @@ const ContactForm = (props) => {
     >
       <div className="form-box">
         <div className="form-row">
+          {/* 
           <input
             type="hidden"
             name="_next"
-            value={`http://ringoffireleather.netlify.app/thankyou?&lang=${language}`}
+            value={`http://${window.location.origin}/#/thankyou?&lang=${language}`}
           />
+          */}
           <input type="hidden" name="_captcha" value="false" />
           <input
             placeholder={literals.name}
