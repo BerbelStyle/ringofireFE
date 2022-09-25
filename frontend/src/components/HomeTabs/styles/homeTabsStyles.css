@@ -58,13 +58,13 @@
     overflow-x: scroll;
   }
   .no-scroll {
-    height: 550px;
+    height: 475px;
     width: 100%;
     overflow: hidden;
   }
   .tab-card {
     width: 90%;
-    height: 550px;
+    height: 600px;
     margin: 0 5% 30px 5%;
     display: inline-block;
   }
