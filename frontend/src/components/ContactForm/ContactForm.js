@@ -7,14 +7,8 @@ import "./styles/contactFormStyles.css";
 
 const ContactForm = (props) => {
   const [language] = useContext(LanguageContext);
-  const [warning, setWarning] = useState(false);
   const literals = require(`../../data/ringoffire-${language}.json`).literals;
-  const user = localStorage.getItem("user");
-  const [hola, setHola] = useState(false);
 
-  const setOk = () => {
-    setHola(true);
-  };
   return (
     <form
       action="https://formsubmit.co/jorgexberbel@gmail.com"
@@ -54,11 +48,7 @@ const ContactForm = (props) => {
           ></textarea>
         </div>
         <div className="form-row-center">
-          <button
-            type="submit"
-            className="btn-send"
-            onClick={() => setWarning(true)}
-          >
+          <button type="submit" className="btn-send">
             {literals.send}
           </button>
         </div>
