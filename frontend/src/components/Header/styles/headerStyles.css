@@ -108,5 +108,6 @@ select {
   font-family: 'Cormorant SC', serif;
   font-weight: 600;
   outline: none;
+  background-color: none;
 }
 /*# sourceMappingURL=headerStyles.css.map */
