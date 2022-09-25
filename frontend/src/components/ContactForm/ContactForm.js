@@ -1,7 +1,6 @@
 /** @format */
 
 import React, { useState, useContext } from "react";
-import { Link } from "react-router-dom";
 import { LanguageContext } from "../../application/Provider";
 import "./styles/contactFormStyles.css";
 
@@ -20,7 +19,7 @@ const ContactForm = (props) => {
           <input
             type="hidden"
             name="_next"
-            value={`http://localhost:3000/thankyou?&lang=${language}`}
+            value={`https://ringoffireleather.netlify.app//thankyou?&lang=${language}`}
           />
           <input type="hidden" name="_captcha" value="false" />
           <input
