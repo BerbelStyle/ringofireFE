@@ -29,6 +29,8 @@
         "password": "Contraseña",
         "send": "Enviar",
         "register": "Registrarse",
-        "add": "Añadir"
+        "add": "Añadir",
+        "thanks": "Gracias",
+        "emailSentMessage": "Tu correo fue enviado correctamente"
     }
 }

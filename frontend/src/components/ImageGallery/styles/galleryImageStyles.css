@@ -10,21 +10,15 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 2%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .gallery {
   width: 60%;
   -webkit-column-count: 4;
           column-count: 4;
-  -webkit-column-width: 25%;
-          column-width: 25%;
 }
 
-.btn, .btn-add, .btn-delete, .btn-send {
+.btn, .btn-add, .btn-delete, .btn-send, .btn-back {
   margin: 15px;
   z-index: 999;
   display: -webkit-box;
@@ -85,40 +79,22 @@
   cursor: pointer;
 }
 
-.buttons-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  bottom: 0;
+.btn-back {
+  background-color: white;
+  border: 2px solid black;
+  font-family: 'Cormorant SC', serif;
+  font-weight: 600;
   width: 200px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
-.icon {
-  -webkit-filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(66deg) brightness(105%) contrast(103%);
-          filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(66deg) brightness(105%) contrast(103%);
-  width: 30px;
-  height: 30px;
-  z-index: 999;
+.btn-back:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
 .product-card {
   z-index: 1;
-  margin: 0 0 10px 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.product-card:hover {
-  z-index: 1;
-  cursor: pointer;
-}
-
-.product-card-selected {
-  border: 3px solid #44d3de;
-  background-color: #44d3de;
   margin: 0 0 10px 0;
 }
 

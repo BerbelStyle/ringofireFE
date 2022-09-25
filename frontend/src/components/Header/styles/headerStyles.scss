@@ -17,7 +17,7 @@
     }
 }
 
-.header-login {
+.header-insta {
     position: absolute;
     top: 35px;
     right: 35px;
@@ -29,20 +29,6 @@
         cursor: pointer;
     }
 
-}
-
-.header-logout {
-    @extend .header-login;
-    opacity: 0;
-    background-color: black;
-    color: white;
-    padding: 5px;
-    margin: -5px -15px 0 0;
-    z-index: 100;
-    transition: 0.3s;
-    &:hover {
-        opacity: 1
-    }
 }
 
 .header-logo {

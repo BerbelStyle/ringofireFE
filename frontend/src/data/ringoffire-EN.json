@@ -29,6 +29,8 @@
         "password": "password",
         "send": "send",
         "register": "register",
-        "add": "Add"
+        "add": "Add",
+        "thanks": "Thank you",
+        "emailSentMessage": "Your e-mail was sent succesfully"
     }
 }

@@ -6,11 +6,10 @@ import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Login from "./pages/Login";
 import MyProvider from "./application/Provider";
 
 import "./App.css";
-import { UserContext } from "./application/UserContext";
+import Thanks from "./pages/Thanks";
 
 const App = () => {
   const [user, setUser] = useState({});
@@ -19,15 +18,13 @@ const App = () => {
     <Router>
       <div className="app">
         <MyProvider>
-          <UserContext.Provider value={providerValue}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/gallery" element={<Gallery />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/login" element={<Login />} />
-            </Routes>
-          </UserContext.Provider>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/thankyou" element={<Thanks />} />
+          </Routes>
         </MyProvider>
       </div>
     </Router>
