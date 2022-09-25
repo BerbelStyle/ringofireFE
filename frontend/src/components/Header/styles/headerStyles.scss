@@ -31,6 +31,8 @@
     @media only screen and (max-width: 600px) {
         height: 25px;
         width: 25px;
+        top: 20px;
+        right: 30px;
     }
 }
 
@@ -69,6 +71,9 @@
 }
 
 .lang-select {
+    -webkit-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
     position: absolute;
     top: 20px;
     left: 30px;
@@ -78,9 +83,10 @@
     outline: none;
     @media only screen and (max-width: 900px) {
         top: 10px;
-    left: 15px;
-    width: 30px;
-    height: 30px;
+        left: 15px;
+        width: 50px;
+        height: 40px;
+        font-size: 10px;
     }
 }
 
