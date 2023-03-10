@@ -53,7 +53,7 @@ const Header = (props) => {
             alt="logo"
           />
         </Link>
-        <a href="https://www.instagram.com/ringfire_leather/" target="_blank">
+        <a href="https://www.instagram.com/westenra.madrid/" target="_blank">
           <img
             className="header-insta"
             width="30px"
