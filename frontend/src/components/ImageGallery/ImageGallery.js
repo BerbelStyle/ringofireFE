@@ -11,7 +11,7 @@ const ImageGallery = (props) => {
   }, []);
 
   const getImages = () => {
-    let i = 21;
+    let i = 19;
     let array = [];
     while (i > 0) {
       array.push("images/products/" + i + ".jpg");
