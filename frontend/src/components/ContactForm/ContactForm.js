@@ -11,7 +11,7 @@ const ContactForm = (props) => {
 
   return (
     <form
-      action="https://formsubmit.co/jorgexberbel@gmail.com"
+      action="https://formsubmit.co/guille.moreno135@gmail.com"
       method="POST"
       className="form-container"
     >
