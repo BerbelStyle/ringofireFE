@@ -48,7 +48,7 @@ const Header = (props) => {
         </select>
         <Link to={"/"}>
           <img
-            src={"images/main_logo_black.png"}
+            src={"images/westenra_logo.png"}
             className="header-logo"
             alt="logo"
           />
